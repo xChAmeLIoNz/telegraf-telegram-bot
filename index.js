@@ -1,9 +1,10 @@
+//npm i telegraf --save
 //const { Telegraf, Telegram } = require('telegraf');
 const { Composer } = require('micro-bot');
 const dotenv = require('dotenv');
 
 dotenv.config();
-
+//const bot = new Telegraf(process.env.TOKEN);
 const bot = new Composer();
 
 
@@ -31,6 +32,3 @@ bot.action('informazioni', (ctx) => {
 //bot.launch();
 module.exports = bot;
 
-//appId = hidden-shore-42294
-//herokuURL = https://hidden-shore-42294.herokuapp.com/
-//TOKEN = '5302564968:AAEr9BsXwKF880Di7oKDPXV5f3E8_Xt4jMg'
